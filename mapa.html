@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+    <script type="text/javascript">Loader.load()</script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Japan',       1],
+          ['Stockholm',   4],
+          ['Stonehange',  2],
+          ['MCR Concert', 4],
+          ['Brighton',    1]
+        ]);
+
+        var options = {
+          title: 'The most popular place'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body class="galbd">
+    <nav>
+        <li><a href="./index.html">Lightbox/Gallery</a></li>
+        <li><a href="./carousel.html">Carousel</a></li>
+        <li><a href="./mapa.html">Mapa +</a></li>
+    </nav> 
+    <div class="textgal">
+        <p> LET'S FIND PLACES FROM THE CAROUSEL</p>
+        <P id="small">because I don't know where this place from Japan is</P>
+    </div>
+   <div class="mapastr">
+        <div id="mapa" style="width:1200px; height:700px;"></div>
+        <script type="text/javascript">
+            var stred = SMap.Coords.fromWGS84(14.41, 50.08);
+            var mapa = new SMap(JAK.gel("mapa"), stred, 10);
+            mapa.addDefaultLayer(SMap.DEF_BASE).enable();
+            mapa.addDefaultControls();	      	      
+        </script>
+    </div>
+    <div class="graf">
+        <div id="piechart" style="width: 1200px; height: 700px;"></div>
+    </div>
+
+</body>
+<footer>
+    <p>All rights to the images belong to the authors on Pinterest</p>
+    <p>and involved snakes</p>
+    <p></p>
+
+</footer>
+</html>

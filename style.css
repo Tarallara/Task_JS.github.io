@@ -1,0 +1,207 @@
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(27, 3, 23, 0.418);
+    position: sticky;
+    font-size: 25px;
+    
+}nav li {
+    float: left;
+}nav li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}nav li a {
+    display: block;
+    color: rgb(27, 3, 23);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}nav li a:hover {
+    background-color: rgba(131, 12, 101, 0.37);
+    color: rgb(66, 18, 54);
+}
+.galbd{
+    background-image:url("./img/EvDBvwGVoAMWrVO.jpg");
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+body {
+    margin: 0;
+    
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    height: 100vh;
+    padding-bottom: 180px;
+}
+.grid img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+ 
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+  
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: rgb(27, 3, 23);
+    border: 2px solid rgb(66, 6, 51);
+}
+
+footer {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(27, 3, 23, 0.418);
+    
+}
+
+.textgal{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 200%;
+    
+}
+
+
+#small{
+font-size: 30px;
+}
+
+* {box-sizing:border-box}
+.divvdivupog{
+ 
+    padding-bottom: 150px;
+
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+.textdark {
+    color: #2f0033f8;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-weight: 200;
+}
+.numbertextdark {
+    color: #000000;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-weight: 200;
+    
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.mapastr{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 150px;
+}
+.graf{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 150px;
+}
